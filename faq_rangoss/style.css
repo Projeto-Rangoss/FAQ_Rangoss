@@ -1,0 +1,70 @@
+body{
+  background-image: url(/img/pngwing.com\ \(2\).png); /* Define uma imagem de fundo para o corpo do documento */
+  background-size: cover; /* Faz com que a imagem de fundo cubra toda a área disponível */
+  background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+  background-attachment: fixed; /* Fixa a imagem de fundo ao rolar a página */
+}
+
+.titulo_faq {
+  text-align: center; /* Centraliza o texto dentro do elemento */
+  padding-top: 50px; /* Adiciona um espaçamento interno de 50px na parte superior */
+  padding-bottom: 50px; /* Adiciona um espaçamento interno de 50px na parte inferior */
+}
+
+.titulo_txt {
+  display: inline-block; /* Define o elemento como um bloco em linha */
+  margin: 0 auto; /* Centraliza o elemento horizontalmente */
+  font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes para o texto */
+}
+
+.linha {
+  width: 50%; /* Define a largura da linha como 50% do elemento pai */
+  height: 5px; /* Define a altura da linha */
+  background-color: #FFF263; /* Define a cor de fundo da linha */
+  margin-top: 10px; /* Margem superior */
+  margin-left: auto; /* Margem esquerda automática para centralização */
+  margin-right: auto; /* Margem direita automática para centralização */
+}
+
+.descricao_faq{
+  padding-top: 10px; /* Adiciona um espaçamento interno de 10px na parte superior */
+  font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes para o texto */
+}
+
+/* Estilos para o acordeão */
+.accordion {
+  background-color: #eee; /* Cor de fundo para os botões do acordeão */
+  color: #444; /* Cor do texto */
+  cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
+  padding: 18px; /* Espaçamento interno dos botões */
+  width: 100%; /* Faz com que os botões ocupem 100% da largura do elemento pai */
+  text-align: left; /* Alinha o texto à esquerda dentro dos botões */
+  border: none; /* Remove a borda dos botões */
+  outline: none; /* Remove o contorno ao focar no elemento */
+  transition: 0.4s; /* Adiciona uma transição suave para mudanças */
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; /* Cor de fundo quando o acordeão está ativo ou sob hover */
+}
+
+.panel {
+  padding: 0 18px; /* Espaçamento interno dos painéis */
+  background-color: white; /* Cor de fundo dos painéis */
+  max-height: 0; /* Altura máxima inicial (usada para animação de abertura/fechamento) */
+  overflow: hidden; /* Esconde o conteúdo que excede a altura máxima */
+  transition: max-height 0.2s ease-out; /* Transição suave para a propriedade max-height */
+  font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes para o texto dos painéis */
+}
+
+.accordion:after {
+  content: '\2228'; /* Caractere de seta para baixo (quando fechado) */
+  font-size: 13px; /* Tamanho da fonte do ícone da seta */
+  color: #777; /* Cor do ícone da seta */
+  float: right; /* Posiciona o ícone à direita do botão */
+  margin-left: 5px; /* Margem à esquerda do ícone */
+}
+
+.active:after {
+  content: "\2227"; /* Caractere de seta para cima (quando aberto) */
+}
